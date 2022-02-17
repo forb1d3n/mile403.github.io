@@ -479,29 +479,35 @@
 
 				<div class="col-md-7 mb-5 mb-md-0">
 					
-					<form action=”https://forms.un-static.com/forms/56a5f5f2a295eea8d243d72cebf276c836a838ea” method=”POST”>
-           <fieldset>
-						<div class="form-group">
-							<input type="text" class="form-control px-3 py-4" placeholder="Your Name" name="Name">
-						</div>
-						</fieldset>
-						<fieldset>
-						<div class="form-group">
-							<input type="email" class="form-control px-3 py-4" placeholder="Your email address" name="Email">
-						</div>
-						</fieldset>
-						<fieldset>
-						<div class="form-group">
-							<input type="tel" class="form-control px-3 py-4" placeholder="Your Phone" name="telephone">
-						</div>
-						</fieldset>
-						<fieldset>
-							
-						<fieldset>
-						<div class="form-group mb-5">
-							<textarea class="form-control px-3 py-4"cols="30" rows="10" placeholder="Write a Message" name="Message"></textarea>
-							<fieldset>
-						</div>
+					<form method="post" action="https://forms.un-static.com/forms/YOUR_ENDPOINT_REFERENCE">
+  <div class="form-group row">
+    <label for="name" class="col-4 col-form-label">Name</label>
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-addon">
+          <i class="fa fa-user"></i>
+        </div>
+        <input id="name" name="name" placeholder="Please enter your name" type="text" required="required" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="email" class="col-4 col-form-label">E-mail address</label>
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-addon">
+          <i class="fa fa-envelope"></i>
+        </div>
+        <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="message" class="col-4 col-form-label">Message</label>
+    <div class="col-8">
+      <textarea id="message" name="message" cols="40" rows="10" required="required" class="form-control"></textarea>
+    </div>
+  </div>
 						<input type="checkbox" onchange="document.getElementById('submitBtn').disabled = !this.checked;"/>
                            By checking this box you agree to the <a href="#" data-toggle="modal" data-target="#termsOfUsage">basic terms of usage</a> for this application
                        </div>
