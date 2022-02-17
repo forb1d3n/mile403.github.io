@@ -642,36 +642,6 @@
 	<!-- Google Map -->
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     	<script src="js/google-map.js"></script> -->
- <!-- Custom Scripts -->
-    <script>
-    // Required snippit to initalize simditor. It is looking for the ID of the textara as listed above
-    var editor = new Simditor({
-        textarea: $('#editor')
-        //optional options added here
-        });
-
-    // Required snippit to initalize the tooltips in Bootstrap
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
-
-    // Toggle show more btn text
-    // Not sure if this is the ideal way to do this, but it works
-    var showMoreOptions = false; // Start with false, because it is hidden by default
-    $('#more-options-btn').click(function(){ // On click check if var is true or false
-        if(!showMoreOptions) {
-            // When it expands content switch to hide
-            $('#show-more').replaceWith("<span id='show-less'>Hide</span>");
-            showMoreOptions = true;
-        } else {
-            // She collapsed switch to show
-            $('#show-less').replaceWith("<span id='show-more'>Show</span>");
-            showMoreOptions = false;
-        }
-    });
-
-    
-
-    </script>
+ 
     </body>
     </html>
